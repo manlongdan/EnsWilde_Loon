@@ -1,4 +1,4 @@
-name: Build EnsWilde for Sideloadly
+name: 在线编译EnsWilde
 
 on:
   workflow_dispatch: # 开启手动点击触发功能
