@@ -56,8 +56,10 @@ static NSArray<NSString *> *TunnelIPCandiates(void) {
     }
 
     // Auto fallback order:
+    //  - Loon TUN uses 198.19.0.1 as tunnel peer
     //  - SideStore LocalDevVPN commonly uses 10.7.0.1 as tunnel peer
     //  - StikDebug legacy commonly uses 10.7.0.2
+    [ips addObject:@"198.19.0.1"];
     [ips addObject:@"10.7.0.1"];
     [ips addObject:@"10.7.0.2"];
 
